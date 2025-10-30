@@ -52,24 +52,11 @@
     th{background:#fffdfb;text-align:left}
     iframe.map{width:100%;height:360px;border:0;display:block}
     footer{border-top:1px solid var(--border);padding:26px 18px;color:var(--muted);background:linear-gradient(0deg,#fff7f0,transparent)}
-    @media(max-width:760px){
-      header{flex-direction:column;align-items:stretch}
-      .brand{justify-content:center}
-      nav{width:100%;justify-content:center}
-      nav a{padding:12px 16px}
-      nav .btn{width:100%;text-align:center}
-      .container{padding-bottom:56px}
-      th,td{display:block;border-left:none;border-right:none}
-      th{border-top:none}
-    }
   </style>
 </head>
 <body>
   <header>
-    <a class="brand" href="#home" aria-label="Startseite">
-      <img src="logo.jpeg" alt="">
-      <div><div class="t1">MeDa Buchhaltungsservice</div><div class="t2">Kaufering</div></div>
-    </a>
+    <a class="brand" href="#home"><img src="logo.jpeg" alt=""><div><div class="t1">MeDa Buchhaltungsservice</div><div class="t2">Kaufering</div></div></a>
     <nav>
       <a href="#ueber-mich">Über mich</a>
       <a href="#leistungen">Leistungen</a>
@@ -111,6 +98,7 @@
           <li class="feature"><span class="check">✓</span><span>Auswertungen &amp; Monatsübersichten</span></li>
         </ul>
       </div>
+
       <div class="card col-6">
         <div class="kicker">Lohn</div><h3>Lohn- &amp; Gehaltsabrechnung</h3>
         <ul class="features">
@@ -119,15 +107,26 @@
           <li class="feature"><span class="check">✓</span><span>Digitale Lohnzettel</span></li>
         </ul>
       </div>
+
       <div class="card col-6">
         <div class="kicker">Unterstützend</div><h3>Zusammenarbeit mit Lexware</h3>
         <p class="muted">Ich unterstütze bei der <strong>Einrichtung, Bedienung und laufenden Nutzung von Lexware</strong> (z. B. Beleg-Upload, digitale Ablage) – so weit es für unsere Zusammenarbeit erforderlich ist. Allgemeine Softwareschulungen biete ich bewusst nicht an; Fokus auf Lexware.</p>
       </div>
     </div>
 
-    <!-- Der Rest bleibt identisch mit Impressum, Preisen, FAQ und Kontaktformular -->
-    <!-- (kann hier bei Bedarf wiederholt werden, ist unverändert) -->
+    <div class="section-head" id="preise"><h2>Preise</h2><div class="muted">Netto / Monat &amp; fair kalkuliert</div></div>
+    <div class="grid">
+      <div class="card col-4 pricebox">
+        <div class="kicker">Für Einsteiger</div><h3>Basis</h3>
+        <div class="price">ab 79 € <small class="muted">/ Monat</small></div>
+        <ul class="features">
+          <li class="feature"><span class="check">✓</span><span>Belegsortierung &amp; Buchung</span></li>
+          <li class="feature"><span class="check">✓</span><span>Vorbereitung der EÜR</span></li>
+          <li class="feature"><span class="check">✓</span><span>Vorbereitung der Umsatzsteuervoranmeldung</span></li>
+          <li class="feature"><span class="check">✓</span><span>Digitaler Beleg-Upload</span></li>
+        </ul>
+      </div>
+    </div>
   </main>
 </body>
 </html>
-
